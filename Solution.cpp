@@ -35,36 +35,36 @@ public:
 };
 // Time Complexity O(n);
 // Space Complexity O(n);
-int main() {
-    Solution solution;
+// int main() {
+//     Solution solution;
    
-    vector<int> prices_month1 = {3,3,5,0,0,3,1,4};
-    /* Answer : 6 */
-  cout << solution.maxProfit(prices_month1) << endl;
+//     vector<int> prices_month1 = {3,3,5,0,0,3,1,4};
+//     /* Answer : 6 */
+//   cout << solution.maxProfit(prices_month1) << endl;
 
-    vector<int> prices_month2 = {1,2,3,4,5};
-    /* Answer : 4 */
-    cout << solution.maxProfit(prices_month2) << endl;
+//     vector<int> prices_month2 = {1,2,3,4,5};
+//     /* Answer : 4 */
+//     cout << solution.maxProfit(prices_month2) << endl;
 
-    vector<int> prices_month3 = {7,6,4,3,1};
-    /* Answer : 0 */
-    cout << solution.maxProfit(prices_month3) << endl;
+//     vector<int> prices_month3 = {7,6,4,3,1};
+//     /* Answer : 0 */
+//     cout << solution.maxProfit(prices_month3) << endl;
 
-    return 0;
-}
+//     return 0;
+// }
 
 
 // /*Dynamic input from the main funtion*/
-// int main(){
-//   Solution solution;
-//     int n,x;   // if the prices in 1.8 rs or dollar we can represent it with float 
-//     cout<<"Enter the size of stock array"<<endl;
-//     cin>>n;
-//     vector<int> prices(n,0);
-//     for (int i=0;i<n;i++){
-//         cin>>x;
-//         prices.push_back(x);
-//     }
-//     cout<<solution.maxProfit(prices)<<endl;
-//     return 0;
-// }
+int main(){
+  Solution solution;
+    int n,x;   // if the prices in 1.8 rs or dollar we can represent it with float 
+    cout<<"Enter the size of stock array"<<endl;
+    cin>>n;
+    vector<int> prices(n,0);
+    for (int i=0;i<n;i++){
+        cin>>x;
+        prices.push_back(x);
+    }
+    cout<<solution.maxProfit(prices)<<endl;
+    return 0;
+}
